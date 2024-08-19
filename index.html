@@ -18,31 +18,37 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+              },
+              fontFamily:{
+                manrope:['Manrope', 'sans-sarif'],
+              },
+              screens:{
+                'xs':'480px'
               }
             }
           }
         }
       </script>
 </head>
-<body>
+<body class="font-manrope">
     <!--header section markup start  -->
     <header>
       <!-- banner section markup start -->
-       <div class="banner-container mx-auto px-10 w-[1150px] my-8 flex">
+       <div class="banner-container mx-auto max-w-[1150px] my-8 lg:flex gap-10">
             <!-- banner left section markup start -->
-            <div class="banner-lef w-[680px] leading-[100px] font-[manrope]">
-              <h1 class="text-[80px] font-extrabold">It's good <br>
+            <div class="banner-lef max-w-[680px] font-[manrope]">
+              <h1 class="xs:text-[60px] leading-[65px] lg:text-[80px] font-extrabold  lg:leading-[100px]">It's good <br>
                 tea time at The Tea House</h1>
                 <p class="text-lg font-medium leading-[30px] text-gray-500" >Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
-                <a class="bg-gradient-to-r from-orange-500 to-red-500 px-6 py-4 rounded-lg text-white text-xl font-bold leading-[27px]" href=""><button>Explore More <span><i class="fa-solid fa-arrow-right -rotate-45"></i></span></button></a>
+                <a class="bg-gradient-to-r from-orange-500 to-red-500 px-6 py-4 rounded-lg text-white text-xl font-bold leading-[27px]" href=""><button class="mt-8">Explore More <span><i class="fa-solid fa-arrow-right -rotate-45"></i></span></button></a>
             </div>
             <!-- banner left section markup end -->
             <!-- banner right section markup start -->
-            <div class="banner-right w-[655px] relative">
+            <div class="banner-right max-w-[655px] relative">
               <div class="banner-img h-[498px]">
                 <img src="./images/banner.png" alt="">
               </div>
-              <div class="rating-card w-60 flex w-[255px] h-20 items-center justify-center gap-4 shadow-md absolute bottom-40 left-6 bg-white rounded-lg">
+              <div class="rating-card max-w-60 flex w-[255px] h-20 items-center justify-center gap-4 shadow-md absolute bottom-40 -left-4 bg-white rounded-lg">
                <div class="start">
                 <i class="fa-solid fa-star text-yellow-300 text-5xl"></i>
                </div>
@@ -60,15 +66,15 @@
     <!-- main section markup start -->
      <main>
       <!-- feature section markup start -->
-       <div class="feature-container w-[1150px] mx-auto px-10 my-8">
+       <div class="feature-container max-w-[1150px] mx-auto my-8">
         <!-- feature title section markup start -->
-        <div class="feature-title w-[850px] text-center mx-auto">
+        <div class="feature-title max-w-[850px] text-center mx-auto">
           <h1 class="text-[45px] font-extrabold">Our Featured Products</h1>
           <p class="text-base font-medium leading-[30px] text-gray-500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
         </div>
         <!-- feature title section markup  end -->
         <!-- feature content section markup start -->
-        <div class="feature-content grid grid-cols-4 gap-6 mt-12 mb-10">
+        <div class="feature-content lg:grid grid-cols-4 gap-6 mt-12 mb-10">
           <div class="img-content1 text-center bg-gradient-to-t from-zinc-50 to-zinc-100 rounded-2xl">
             <img class="mx-auto" src="images/tea-1.png" alt="">
             <h2 class="text-2xl font-extrabold leading- [34px] mt-7 mb-2">Milk Tea</h2>
@@ -93,6 +99,43 @@
         </div>
         <!-- feature content section markup end -->
       <!-- feature section markup end -->
+       <!-- present section markup start -->
+        <section class="present-container lg:max-w-[1150px] flex mt-28">
+        <!-- present left section markup start -->
+         <section class="present-left-contentainer flex">
+          <div class="content1 flex flex-col w-[238px] gap-5 items-center">
+            <div class="empty w-[238px] bg-gradient-to-r from-red-200 to-red-50 h-[136px] rounded-xl">
+            </div>
+            <div class="img bg-green-50 rounded-xl w-[238px] h-[355px] flex items-center justify-center">
+              <img src="images/fresh-2.png" alt="">
+            </div>
+          </div>
+          <div class="content2 flex flex-col-reverse w-[280px] gap-5 items-center">
+            <div class="empty w-[238px] bg-gradient-to-r from-neutral-200 to-neutral-50 h-[136px] rounded-xl">
+            </div>
+            <div class="img bg-amber-50 rounded-xl w-[238px] h-[355px] flex items-center justify-center">
+              <img src="images/fresh-1.png" alt="">
+            </div>
+          </div>
+
+         </section>
+        <!-- present left section markup end -->
+         <!-- present right section markup start -->
+          <section class="present-right-container ml-12">
+            <h1 class="text-[45px] font-extrabold leading-[60px]">Great Tea, Freshly Presented</h1>
+            <p class="text-base font-medium leading-7 mt-6 mb-4 text-gray-500">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+            <div class="unique-text max-w-[458px]">
+              <h2 class="text-xl font-extrabold leading-[27px]">Unique Taste</h2>
+              <p class="text-base font-medium leading-7 text-gray-500">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+            </div>
+            <div class="unique-text2 max-w-[458px] mt-5">
+              <h2 class="text-xl font-extrabold leading-[27px]">Premium Quality</h2>
+              <p class="text-base font-medium leading-7 text-gray-500">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+            </div>
+          </section>
+         <!-- present right section markup end -->
+        </section>
+       <!-- present section markup end -->
      </main>
     <!-- main section markup end -->
      <!-- footer section markup start -->
